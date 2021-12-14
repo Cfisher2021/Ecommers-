@@ -97,13 +97,13 @@
 .link:hover{
     opacity: 1;
 }
-
-@import 'nav.css';
-
+/*Hero Section*/
 .hero-section{
     width: 100%;
+    position: relative;
     height: calc(100vh - 120px);
     background-image: url(https://akamai-origin.myanimelist.net/s/common/uploaded_files/1444014275-106dee95104209bb9436d6df2b6d5145.jpeg);
+    filter: brightness(65%);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -116,19 +116,19 @@
     margin: auto;
 }
 
-
 .hero-section .sub-heading{
     margin-top: 10px;
     text-align: center;
     color: #fff;
     text-transform: capitalize;
     font-size: 50px;
-    font-weight: 300;
+    font-weight: 300px;
     text-shadow: -2px 2px 4px 
     rgba(0, 0, 0, 0.5), 
     2px -2px 0 
      rgba(255, 255, 255, 0.9);
 }
+/*product Section*/
 .product{
     position: relative;
     overflow: hidden;
@@ -173,7 +173,7 @@
     height: 350px;
     object-fit: cover;
 }
-
+/*card Section*/
 .discount-tag{
     position: absolute;
     background: #fff;
