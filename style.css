@@ -1,139 +1,95 @@
-/*Nav Section*/
+/* This affects the entire website */
 *{
+    text-decoration: none;
+    box-sizing: 0;
+    margin: 0;
+  }
+  
+  body{
+    background-color:white;
+  }
+  
+  /*----Navigation Section----*/
+  ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'roboto', sans-serif;
-}
-
-.navbar{
-    position: sticky;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
-    background: #f5f5f5;
-    z-index: 9;
-}
-
-.nav{
-    padding: 10px 10vw;
-    display: flex;
-    justify-content: space-between;
-}
-
-.brand-logo{
-    height: 60px;
-}
-
-.nav-items{
-    display: flex;
-    align-items: center;
-}
-
-.search{
-    width: 500px;
-    display: flex;
-}
-
-.search-box{
-    width: 80%;
-    height: 40px;
-    padding: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border: 1px solid #d1d1d1;
-    text-transform: capitalize;
-    background: none;
-    color: #a9a9a9;
-    outline: none;
-}
-
-.search-btn{
-    width: 20%;
-    height: 40px;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background: #383838;
-    color: #fff;
-    text-transform: capitalize;
-    font-size: 15px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.search-box::placeholder{
-    color: #a9a9a9;
-}
-
-.nav-items a{
-    margin-left: 20px;
-}
-
-.nav-items a img{
-    width: 30px;
-}
-/*Links*/
-.links-container{
-    width: 100%;
-    display: flex;
-    padding: 10px 10vw;
-    justify-content: center;
-    list-style: none;
-    border-top: 1px solid #d1d1d1;
-}
-
-.link{
-    text-transform: capitalize;
-    padding: 0 10px;
-    margin: 0 5px;
-    text-decoration: none;
-    color: #383838;
-    opacity: 0.5;
-    transition: .5s;
-}
-
-.link:hover{
-    opacity: 1;
-}
-/*Hero Section*/
-.hero-section{
-    width: 100%;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    font-size: 20px;
+  }
+  
+  li a:hover{
+    background-color: white;
+    color: black;
+  }
+  
+  .logo{
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    color: white;
+    float: left;
+    padding: 10px 14px;
+  }
+  
+  /* The hero image */
+  .heroImg {
     position: relative;
-    height: calc(100vh - 120px);
-    background-image: url(https://akamai-origin.myanimelist.net/s/common/uploaded_files/1444014275-106dee95104209bb9436d6df2b6d5145.jpeg);
-    filter: brightness(65%);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-section .logo{
-    height: 150px;
-    display: block;
-    margin: auto;
-}
-
-.hero-section .sub-heading{
+    filter: brightness(30%);
+    width: 100%;
+  }
+  
+  .heroText {
+    text-align: start;
+    position: absolute;
+    top: 29%;
+    left: 19%;
+    margin-right: 450px;
+    color: white;
+  }
+  
+  .heroh1Tag{
+    margin-bottom: 10px;
+    font-size: 90px;
+  }
+  
+  .heroPTag{
+     margin-bottom: 30px;
+     font-size: 25px;
+  }
+  
+  .btn1{
+    color: rgb(0, 0, 94);
+    background-color: azure;
     margin-top: 10px;
     text-align: center;
-    color: #fff;
     text-transform: capitalize;
-    font-size: 50px;
-    font-weight: 300px;
-    text-shadow: -2px 2px 4px 
-    rgba(0, 0, 0, 0.5), 
-    2px -2px 0 
-     rgba(255, 255, 255, 0.9);
-}
-/*product Section*/
-.product{
+    font-size: 35px;
+    font-weight: 300;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  .product{
     position: relative;
     overflow: hidden;
     padding: 20px 0;
 }
+
+
 
 .product-category{
     padding: 0 10vw;
@@ -173,7 +129,7 @@
     height: 350px;
     object-fit: cover;
 }
-/*card Section*/
+
 .discount-tag{
     position: absolute;
     background: #fff;
@@ -240,3 +196,32 @@
     opacity: 0.5;
     text-decoration: line-through;
 }
+
+.footer{
+    text-align: center;
+    background-color:linear-gradient(90deg, #b13e8b, #372056);
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  
+  .fa {
+      padding: 25px;
+      font-size: 40px;
+      width: 20px;
+      text-align: center;
+      color: #053031;
+    }
+  
+  .fa:hover {
+    opacity: 0.3;
+    color: lightblue;
+  } 
+  
+  .email{
+    color: rgb(168, 2, 2);
+  }
+  
+  .email:hover{
+    color: lightblue;
+  }
