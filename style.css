@@ -83,6 +83,8 @@
     border-radius: 20px;
     text-decoration: none;
   }
+
+  /*product section*/
   .product{
     position: relative;
     overflow: hidden;
@@ -97,6 +99,7 @@
     font-weight: 500;
     margin-bottom: 40px;
     text-transform: capitalize;
+    text-align:center;
 }
 
 .product-container{
@@ -197,7 +200,7 @@
     text-decoration: line-through;
 }
 
-.footer{
+footer{
     text-align: center;
     background-color:linear-gradient(90deg, #b13e8b, #372056);
     color: black;
@@ -218,10 +221,14 @@
     color: lightblue;
   } 
   
+  .copyright{
+    padding-bottom: 10px;
+  }
+  
   .email{
     color: rgb(168, 2, 2);
   }
   
   .email:hover{
     color: lightblue;
-  }
+  }  

@@ -4,7 +4,13 @@
     text-decoration: none;
     box-sizing: border-box;
   }
-
+  body{
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQld03Rch04eIOA7dFkiD8e377f-STprCnI0B3t0bRThQ_yoRFcWlWjvXBPvbQfwF-CXWI&usqp=CAU);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    
+  }
   /*----Navigation Section----*/
   ul {
     list-style-type: none;
@@ -66,8 +72,8 @@
     grid-template-columns: repeat(4, 250px);
     grid-gap: 1.5rem 1.3rem;
     margin: 20px 50px;
-    -ms-grid-row-align: center;
-    -ms-grid-column-align: center;
+    justify-content: center;
+    align-content: center;
   }
   .product {
     border-radius: 10px;
@@ -88,11 +94,14 @@
     font-weight:900;
     font-size: 20px;
     margin-bottom: 5px;
+    color:turquoise;
   }
   .product-name {
     margin-bottom: 5px;
+    color: rgb(255, 0, 149);
   }
-  .footer{
+ 
+  footer{
     text-align: center;
     background-color:linear-gradient(90deg, #b13e8b, #372056);
     color: black;
@@ -113,10 +122,14 @@
     color: lightblue;
   } 
   
+  .copyright{
+    padding-bottom: 10px;
+  }
+  
   .email{
     color: rgb(168, 2, 2);
   }
   
   .email:hover{
     color: lightblue;
-  }
+  }  
